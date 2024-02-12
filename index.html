@@ -1,155 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Wy无云个人小网站</title>
-		<style type="text/css">
-			/* CSS Document */
-			* {
-				margin: 0;
-				padding: 0;
-			}
+<head>
+  <meta charset="utf-8">
+  <title>Wy无云个人小网站</title>
+  <style type="text/css">
+    /* CSS Document */
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-			a {
-				text-decoration: none;
-			}
+    a {
+      text-decoration: none;
+    }
 
-			.clearfix:after {
-				content: "";
-				display: block;
-				height: 0;
-				visibility: hidden;
-				clear: both;
-			}
+    body {
+      background: url(https://anmoeny.github.io/bj.png) no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      align-items: flex-start; /* 从顶部对齐 */
+      justify-content: center; /* 水平居中对齐 */
+      min-height: 100vh; /* 设置body的最小高度为视口的高度 */
+      margin: 0;
+      padding: 0;
+    }
 
-			.clearfix {
-				*zoom: 1;
-			}
+    .content {
+      width: 900px;
+      height: 500px;
+      border-radius: 10px;
+      background-color: rgba(236, 236, 236, 0.59);
+      transition: all 1.0s;
+      margin-top: 100px; /* 修改margin-top属性 */
+    }
 
-			body {
-				background: url(https://anmoeny.github.io/bj.png) no-repeat;
-				background-size: cover;
-				background-attachment: fixed;
-			}
+    .content img {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 150px 0 0 80px;
+      border-radius: 100px;
+    }
 
-			.content {
-				width: 900px;
-				height: 500px;
-				margin: 200px auto 0 auto;
-				border-radius: 10px;
-				background-color: rgba(236, 236, 236, 0.59);
-				transition: all 1.0s;
-				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
-			}
+    .content:hover {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+    }
 
-			.content img {
-				float: left;
-				width: 200px;
-				height: 200px;
-				margin: 150px 0 0 80px;
-				border-radius: 100px;
+    .content_r {
+      float: right;
+      width: 500px;
+      margin: 80px 60px 0 0;
+    }
 
-			}
+    .content_l {
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
 
-			.content:hover {
-				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
-			}
+    .content_l h2 {
+      font-size: 24px;
+    }
 
-			.content_r {
-				float: right;
-				width: 500px;
-				margin: 80px 60px 0 0;
-				/*	background-color: pink;*/
-			}
+    .content_l h5 {
+      font-size: 17px;
+    }
 
-			.content_l {
-				float: left;
-				width: 100%;
-				text-align: center;
-			}
+    .cc {
+      margin-top: 10px;
+      color: #1F2023;
+      font-size: 18px;
+    }
 
-			.content_l h5 {
+    .color_1 {
+      color: #4855EC;
+      font-size: 18px;
+    }
 
-				font-size: 17px;
-			}
+    .deeppink {
+      color: deeppink;
+    }
 
-			.cc {
-				margin-top: 10px;
-				color: #1F2023;
-				font-size: 18px;
-			}
+    .link {
+      margin-top: 30px;
+    }
 
-			.color_1 {
-				color: #4855EC;
-				font-size: 18px;
-			}
+    .link a {
+      display: block;
+      float: left;
+      width: 120px;
+      height: 45px;
+      margin: 5px 5px 0 0;
+      color: #fff;
+      line-height: 45px;
+      transition: all 0.8s;
+    }
 
-			.deeppink {
-				color: deeppink;
-			}
+    .link a:hover {
+      background-color: rgba(0, 201, 243, 0.35);
+    }
 
-			.link {
-				margin-top: 30px;
-			}
+    .deeppink_1 {
+      background-color: deeppink;
+    }
 
-			.link a {
-				display: block;
-				float: left;
-				width: 120px;
-				height: 45px;
-				margin: 5px 5px 0 0;
-				/*	padding: 0 15px;*/
-				color: #fff;
-				line-height: 45px;
-				transition: all 0.8s;
-				/*	background-color: deeppink;*/
+    .dodgerblue {
+      background-color: dodgerblue;
+    }
 
-			}
+    .magenta {
+      background-color: magenta;
+    }
 
-			.link a:hover {
-				background-color: rgba(0, 201, 243, 0.35);
-			}
+    .orange {
+      background-color: orange;
+    }
+  </style>
+</head>
 
-			.deeppink_1 {
-				background-color: deeppink;
-			}
-
-			.dodgerblue {
-				background-color: dodgerblue;
-			}
-
-			.magenta {
-				background-color: magenta;
-			}
-
-			.orange {
-				background-color: orange;
-			}
-		</style>
-	</head>
-
-	<body>
-		<div class="content">
-			<img src="https://anmoeny.github.io/t.png" alt="">
-			<div class="content_r clearfix">
-				<div class="content_l clearfix">
-					<h2>Hi~ 我是Wy无云， Welcome here ！</h2>
-					<p class="cc">欢迎来到我的主页，一位热爱编程的小渣渣~</p>
-					<p class="cc">爱好计算机，会去自学一些感兴趣的东西 !</p>
-					<br>
-					<p class="color_1">I am an ambitious salted fish!</p>
-					<p class="color_1">我是一位有野心的咸鱼!</p>
-					<br>
-					<p class="deeppink">只要路是对的，就不怕路远。</p>
-					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
-					<div class="link">
-						<a href="#" class="dodgerblue" target="_blank">官网</a>
-						<a href="https://qm.qq.com/q/6HW7OGkiNW" class="deeppink_1" target="_blank">我的QQ</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+<body>
+  <div class="content">
+    <img src="https://anmoeny.github.io/t.png" alt="">
+    <div class="content_r">
+      <div class="content_l">
+        <h2>Hi~ 我是Wy无云， Welcome here ！</h2>
+        <p class="cc">欢迎来到我的主页，一位热爱编程的小渣渣~</p>
+        <p class="cc">爱好计算机，会去自学一些感兴趣的东西 !</p>
+        <br>
+        <p class="color_1">I am an ambitious salted fish!</p>
+        <p class="color_1">我是一位有野心的咸鱼!</p>
+        <br>
+        <p class="deeppink">只要路是对的，就不怕路远。</p>
+        <p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
+        <div class="link">
+          <a href="#" class="dodgerblue" target="_blank">官网</a>
+          <a href="https://qm.qq.com/q/6HW7OGkiNW" class="deeppink_1" target="_blank">我的QQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 
 </html>
